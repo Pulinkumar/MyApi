@@ -3,6 +3,7 @@ using System.Web.Http.Description;
 
 namespace Splendent.Master.Web.Controllers
 {
+    [RoutePrefix("api/employee")]
     public class EmployeeController : BaseApiController
     {
         

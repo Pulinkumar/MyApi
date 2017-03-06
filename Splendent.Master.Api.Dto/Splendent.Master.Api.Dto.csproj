@@ -7,8 +7,8 @@
     <ProjectGuid>{5EC58D63-892A-49B0-BEC4-94A58CC75D45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Splendent.Master.Dto</RootNamespace>
-    <AssemblyName>Splendent.Master.Dto</AssemblyName>
+    <RootNamespace>Splendent.Master.Api.Dto</RootNamespace>
+    <AssemblyName>Splendent.Master.Api.Dto</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
