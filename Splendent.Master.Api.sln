@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splendent.Master.Common.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splendent.Master.Common.MockData", "Splendent.Master.Common.MockData\Splendent.Master.Common.MockData.csproj", "{08683F7A-B440-4585-8375-26500978D02F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splendent.Master.BusinessLogic.Interfaces", "Splendent.Master.BusinessLogic.Interfaces\Splendent.Master.BusinessLogic.Interfaces.csproj", "{48FCD7D6-66C3-4C07-98B6-E902C23F8051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Splendent.Master.Dependency", "Splendent.Master.Dependency\Splendent.Master.Dependency.csproj", "{24B6E713-FACB-49CF-A856-6AA90248DE99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{08683F7A-B440-4585-8375-26500978D02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08683F7A-B440-4585-8375-26500978D02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08683F7A-B440-4585-8375-26500978D02F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FCD7D6-66C3-4C07-98B6-E902C23F8051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FCD7D6-66C3-4C07-98B6-E902C23F8051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FCD7D6-66C3-4C07-98B6-E902C23F8051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FCD7D6-66C3-4C07-98B6-E902C23F8051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B6E713-FACB-49CF-A856-6AA90248DE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B6E713-FACB-49CF-A856-6AA90248DE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B6E713-FACB-49CF-A856-6AA90248DE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B6E713-FACB-49CF-A856-6AA90248DE99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,5 +82,7 @@ Global
 		{6DA090B0-6D0A-414E-A938-303C6531B6C4} = {FD52650C-5713-4F25-A982-2382D7E23664}
 		{145DC761-7C04-4F9A-9E21-A3691E94F427} = {FD52650C-5713-4F25-A982-2382D7E23664}
 		{08683F7A-B440-4585-8375-26500978D02F} = {FD52650C-5713-4F25-A982-2382D7E23664}
+		{48FCD7D6-66C3-4C07-98B6-E902C23F8051} = {709F5DCA-D417-4E49-9E18-574F3680CE84}
+		{24B6E713-FACB-49CF-A856-6AA90248DE99} = {FD52650C-5713-4F25-A982-2382D7E23664}
 	EndGlobalSection
 EndGlobal

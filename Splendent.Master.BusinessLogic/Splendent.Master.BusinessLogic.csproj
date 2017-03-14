@@ -44,11 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EmployeeBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Splendent.Master.Api.Dto\Splendent.Master.Api.Dto.csproj">
+      <Project>{5ec58d63-892a-49b0-bec4-94a58cc75d45}</Project>
+      <Name>Splendent.Master.Api.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Splendent.Master.BusinessLogic.Interfaces\Splendent.Master.BusinessLogic.Interfaces.csproj">
+      <Project>{48fcd7d6-66c3-4c07-98b6-e902c23f8051}</Project>
+      <Name>Splendent.Master.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Splendent.Master.Common.MockData\Splendent.Master.Common.MockData.csproj">
+      <Project>{08683f7a-b440-4585-8375-26500978d02f}</Project>
+      <Name>Splendent.Master.Common.MockData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
