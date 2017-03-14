@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Splendent.Master.Web.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -168,10 +169,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mvc5, Version=1.2.3.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unity.Mvc5.1.2.3\lib\net45\Unity.Mvc5.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
@@ -269,6 +266,10 @@
     <ProjectReference Include="..\Splendent.Master.BusinessLogic\Splendent.Master.BusinessLogic.csproj">
       <Project>{eca31817-f834-4c3e-b549-07bca8ed1eae}</Project>
       <Name>Splendent.Master.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Splendent.Master.Dependency\Splendent.Master.Dependency.csproj">
+      <Project>{24b6e713-facb-49cf-a856-6aa90248de99}</Project>
+      <Name>Splendent.Master.Dependency</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

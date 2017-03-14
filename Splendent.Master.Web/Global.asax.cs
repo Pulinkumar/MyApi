@@ -14,7 +14,7 @@ namespace Splendent.Master.Web
         protected void Application_Start()
         {
             UnityConfig.RegisterComponents();
-            AreaRegistration.RegisterAllAreas();
+            //AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             
