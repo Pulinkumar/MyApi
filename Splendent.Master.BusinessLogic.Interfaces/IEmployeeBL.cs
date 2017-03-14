@@ -9,8 +9,8 @@ namespace Splendent.Master.BusinessLogic.Interfaces
 {
     public interface IEmployeeBL
     {
-        List<Employee> GetEmployee();
-        Employee GetEmployee(int EmployeeID);
+        Task<List<Employee>> GetEmployee();
+        Task<Employee> GetEmployee(int EmployeeID);
 
     }
 }

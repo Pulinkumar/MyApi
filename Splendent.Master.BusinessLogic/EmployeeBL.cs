@@ -16,16 +16,16 @@ namespace Splendent.Masters.BusinessLogic
 
         }
 
-        public List<Employee> GetEmployee()
+        public Task<List<Employee>> GetEmployee()
         {
             var employeeMock = new EmployeeMock();
-            return employeeMock.GetEmployeeMockData();
+            return Task.FromResult(employeeMock.GetEmployeeMockData());
         }
 
-        public Employee GetEmployee(int EmployeeID)
+        public Task<Employee> GetEmployee(int EmployeeID)
         {
             var employeeMock = new EmployeeMock();
-            return employeeMock.GetEmployeeMockData(EmployeeID);
+            return Task.FromResult(employeeMock.GetEmployeeMockData(EmployeeID));
         }
     }
 }

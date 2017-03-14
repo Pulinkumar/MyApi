@@ -1,7 +1,7 @@
 ﻿using Splendent.Master.Api.Dto;
 using Splendent.Master.BusinessLogic.Interfaces;
-using Splendent.Masters.BusinessLogic;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 
@@ -18,16 +18,16 @@ namespace Splendent.Master.Web.Controllers
         
         [Route("getemployees"), HttpGet]
         [ResponseType(typeof(List<Employee>))]
-        public List<Employee> GetEmployees()
+        public async Task<List<Employee>> GetEmployees()
         {
-            return _employeeBL.GetEmployee();
+            return await _employeeBL.GetEmployee();
         }
 
         [Route("getemployee"), HttpGet]
         [ResponseType(typeof(Employee))]
-        public Employee GetEmployee(int EmployeeID)
+        public async Task<Employee> GetEmployee(int EmployeeID)
         {
-            return _employeeBL.GetEmployee(EmployeeID);
+            return await _employeeBL.GetEmployee(EmployeeID);
         }
     }
 }

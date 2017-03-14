@@ -1,12 +1,7 @@
 ﻿using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
-using Splendent.Master.BusinessLogic.Interfaces;
-using Splendent.Masters.BusinessLogic;
-using Microsoft.Practices.Unity;
 using Splendent.Master.Dependency.Resolver;
-using System.Web.Http.Description;
-using System.Web.Http.Dispatcher;
 
 namespace Splendent.Master.Web
 {

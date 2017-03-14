@@ -34,7 +34,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Splendent.Master.Web.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -263,14 +264,13 @@
       <Project>{48fcd7d6-66c3-4c07-98b6-e902c23f8051}</Project>
       <Name>Splendent.Master.BusinessLogic.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Splendent.Master.BusinessLogic\Splendent.Master.BusinessLogic.csproj">
-      <Project>{eca31817-f834-4c3e-b549-07bca8ed1eae}</Project>
-      <Name>Splendent.Master.BusinessLogic</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Splendent.Master.Dependency\Splendent.Master.Dependency.csproj">
       <Project>{24b6e713-facb-49cf-a856-6aa90248de99}</Project>
       <Name>Splendent.Master.Dependency</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
