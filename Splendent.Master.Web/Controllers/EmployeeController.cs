@@ -1,5 +1,6 @@
 ﻿using Splendent.Master.Api.Dto;
 using Splendent.Master.BusinessLogic.Interfaces;
+using Splendent.Master.Web.Swagger;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -28,6 +29,14 @@ namespace Splendent.Master.Web.Controllers
         public async Task<Employee> GetEmployee(int EmployeeID)
         {
             return await _employeeBL.GetEmployee(EmployeeID);
+        }
+
+        [Route("testhideinswagger"), HttpGet]
+        [ResponseType(typeof(string))]
+        [HideInSwagger]
+        public async Task<string> TestHideInSwagger()
+        {
+            return await Task.FromResult("Test String");
         }
     }
 }
