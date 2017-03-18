@@ -16,7 +16,15 @@ namespace Splendent.Master.Web.Controllers
         {
             _employeeBL = employeeBL;
         }
-        
+
+        [Route("testEmployeeApi"), HttpGet]
+        [ResponseType(typeof(string))]
+        //[HideInSwagger]
+        public async Task<string> TestEmployeeApi()
+        {
+            return await Task.FromResult("Test Employee Api");
+        }
+
         [Route("getemployees"), HttpGet]
         [ResponseType(typeof(List<Employee>))]
         public async Task<List<Employee>> GetEmployees()
@@ -30,13 +38,6 @@ namespace Splendent.Master.Web.Controllers
         {
             return await _employeeBL.GetEmployee(EmployeeID);
         }
-
-        [Route("testhideinswagger"), HttpGet]
-        [ResponseType(typeof(string))]
-        [HideInSwagger]
-        public async Task<string> TestHideInSwagger()
-        {
-            return await Task.FromResult("Test String");
-        }
+        
     }
 }
