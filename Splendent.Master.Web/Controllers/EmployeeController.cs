@@ -20,23 +20,23 @@ namespace Splendent.Master.Web.Controllers
         [Route("testEmployeeApi"), HttpGet]
         [ResponseType(typeof(string))]
         //[HideInSwagger]
-        public async Task<string> TestEmployeeApi()
+        public async Task<IHttpActionResult> TestEmployeeApi()
         {
-            return await Task.FromResult("Test Employee Api");
+            return Ok(await Task.FromResult("Test Employee Api"));
         }
 
         [Route("getemployees"), HttpGet]
         [ResponseType(typeof(List<Employee>))]
-        public async Task<List<Employee>> GetEmployees()
+        public async Task<IHttpActionResult> GetEmployees()
         {
-            return await _employeeBL.GetEmployee();
+            return Ok(await _employeeBL.GetEmployee());
         }
 
         [Route("getemployee"), HttpGet]
         [ResponseType(typeof(Employee))]
-        public async Task<Employee> GetEmployee(int EmployeeID)
+        public async Task<IHttpActionResult> GetEmployee(int EmployeeID)
         {
-            return await _employeeBL.GetEmployee(EmployeeID);
+            return Ok(await _employeeBL.GetEmployee(EmployeeID));
         }
         
     }
